@@ -21,10 +21,6 @@
   --radius-md: 0.875rem;
   --radius-pill: 999px;
 }
-  --radius-lg: 1.25rem;
-  --radius-md: 0.875rem;
-  --radius-pill: 999px;
-}
 
 @layer base {
   html {
