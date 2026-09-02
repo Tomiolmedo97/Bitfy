@@ -1,4 +1,4 @@
-const OG_IMAGE = "https://bitfy.vercel.app/og.jpg";
+const OG_IMAGE = "https://bitfy.vercel.app/og.jpg?v=autumn";
 const OG_TAGS = [
   `<meta property="og:image" content="${OG_IMAGE}">`,
   `<meta property="og:image:width" content="1200">`,
