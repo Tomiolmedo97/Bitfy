@@ -16,7 +16,7 @@ export const Route = createRootRoute({
         content:
           "Diseño y desarrollo web para emprendedores, profesionales y PyMEs. Catálogos, landings y sitios institucionales.",
       },
-      { name: "theme-color", content: "#0F172A" },
+      { name: "theme-color", content: "#2C211C" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
