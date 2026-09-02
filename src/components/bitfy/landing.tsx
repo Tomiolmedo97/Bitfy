@@ -175,7 +175,7 @@ export function Landing() {
 
 function Hero() {
   return (
-    <section id="inicio" className="relative overflow-hidden bg-gradient-to-r from-ink via-ink to-ink-soft text-fg-on-ink">
+    <section id="inicio" className="relative overflow-hidden bg-gradient-to-r from-ink via-ink-soft to-primary-deep text-fg-on-ink">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-28">
         <div>
           <p className="mb-5 text-xs font-semibold tracking-[0.18em] text-primary uppercase">
