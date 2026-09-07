@@ -43,6 +43,12 @@ export const Route = createRootRoute({
     <html lang="es" suppressHydrationWarning>
       <head>
         <HeadContent />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "if('scrollRestoration'in history)history.scrollRestoration='manual';if(location.hash)history.replaceState(null,'',location.pathname+location.search);scrollTo(0,0);",
+          }}
+        />
       </head>
       <body>
         <PreviewHostBridge />
