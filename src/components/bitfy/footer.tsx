@@ -28,9 +28,6 @@ export function Footer() {
             <a href={whatsappUrl()} target="_blank" rel="noreferrer" data-cursor="CHAT" className="hover:text-trigo">
               WhatsApp · {WHATSAPP_DISPLAY}
             </a>
-            <a href="https://www.instagram.com" data-cursor="GO" className="hover:text-trigo">
-              Instagram
-            </a>
           </div>
           <p className="text-xs tracking-[0.16em] text-crema/40 uppercase">© 2026 Bitfy</p>
         </div>

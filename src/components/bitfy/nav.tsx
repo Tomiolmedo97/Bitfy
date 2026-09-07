@@ -5,9 +5,9 @@ import { cn } from "@/lib/utils";
 import { WHATSAPP_DISPLAY, whatsappUrl } from "@/lib/whatsapp";
 
 const LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#contact", label: "Contact" },
+  { href: "#about", label: "Nosotros" },
+  { href: "#services", label: "Servicios" },
+  { href: "#contact", label: "Contacto" },
 ];
 
 export function Nav() {
