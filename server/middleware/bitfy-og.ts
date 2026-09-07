@@ -1,9 +1,16 @@
-const OG_IMAGE = "https://bitfy.vercel.app/og.jpg?v=autumn";
+const OG_IMAGE = "https://www.bitfy.com.ar/og.jpg?v=wordmark";
+
 const OG_TAGS = [
+  `<meta property="og:title" content="Bitfy">`,
+  `<meta property="og:description" content="Tu presencia digital, sin vueltas.">`,
+  `<meta property="og:url" content="https://www.bitfy.com.ar/">`,
   `<meta property="og:image" content="${OG_IMAGE}">`,
+  `<meta property="og:image:secure_url" content="${OG_IMAGE}">`,
   `<meta property="og:image:width" content="1200">`,
   `<meta property="og:image:height" content="630">`,
   `<meta property="og:image:type" content="image/jpeg">`,
+  `<meta property="og:image:alt" content="Bitfy">`,
+  `<meta name="twitter:card" content="summary_large_image">`,
   `<meta name="twitter:image" content="${OG_IMAGE}">`,
 ].join("");
 
@@ -20,14 +27,11 @@ export default async function bitfyOgMiddleware(
   const type = result.headers.get("content-type") ?? "";
   if (!type.includes("text/html") || !result.body) return result;
 
-  const html = await result.text();
-  if (html.includes('property="og:image"')) {
-    return new Response(html, {
-      status: result.status,
-      statusText: result.statusText,
-      headers: result.headers,
-    });
-  }
+  let html = await result.text();
+  html = html
+    .replace(/<meta[^>]+property=["']og:image["'][^>]*>/gi, "")
+    .replace(/<meta[^>]+property=["']og:image:secure_url["'][^>]*>/gi, "")
+    .replace(/<meta[^>]+name=["']twitter:image["'][^>]*>/gi, "");
 
   const nextHtml = /<\/head>/i.test(html)
     ? html.replace(/<\/head>/i, `${OG_TAGS}</head>`)
