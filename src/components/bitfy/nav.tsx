@@ -37,7 +37,14 @@ export function Nav() {
         )}
       >
         <div className="mx-auto flex max-w-[1400px] items-center justify-between">
-          <a href="#top" data-cursor="HOME" className="font-logo text-[22px] leading-none text-castano">
+          <a
+            href="#top"
+            data-cursor="HOME"
+            className={cn(
+              "font-logo text-[22px] leading-none",
+              open ? "text-crema md:text-castano" : "text-espresso md:text-castano",
+            )}
+          >
             Bitfy
           </a>
           <nav className="hidden items-center gap-8 md:flex">
@@ -56,7 +63,7 @@ export function Nav() {
             type="button"
             className={cn(
               "relative z-50 grid size-11 place-items-center md:hidden",
-              open || !scrolled ? "text-crema" : "text-espresso",
+              open ? "text-crema" : "text-espresso",
             )}
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
             onClick={() => setOpen((v) => !v)}
