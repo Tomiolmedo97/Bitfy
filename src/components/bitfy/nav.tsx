@@ -54,11 +54,14 @@ export function Nav() {
           </nav>
           <button
             type="button"
-            className="grid size-11 place-items-center text-espresso md:hidden"
+            className={cn(
+              "relative z-50 grid size-11 place-items-center md:hidden",
+              open || !scrolled ? "text-crema" : "text-espresso",
+            )}
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
             onClick={() => setOpen((v) => !v)}
           >
-            {open ? <X size={22} /> : <Menu size={22} />}
+            {open ? <X size={22} strokeWidth={2.2} /> : <Menu size={22} strokeWidth={2.2} />}
           </button>
         </div>
       </header>
