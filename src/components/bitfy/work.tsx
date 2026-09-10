@@ -20,7 +20,7 @@ const PROJECTS = [
   },
   {
     n: "03",
-    name: "M22shop",
+    name: "M22 SHOP",
     kind: "Catálogo",
     copy: "Remeras de algodón con diseños de videojuegos clásicos. Tienda simple: talles, precio y compra por WhatsApp.",
     href: "https://m22-store.vercel.app/",
