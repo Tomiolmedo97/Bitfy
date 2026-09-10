@@ -5,6 +5,7 @@ import { Nav } from "@/components/bitfy/nav";
 import { Hero } from "@/components/bitfy/hero";
 import { Services } from "@/components/bitfy/services";
 import { About } from "@/components/bitfy/about";
+import { Work } from "@/components/bitfy/work";
 import { Marquee } from "@/components/bitfy/marquee";
 import { Orb } from "@/components/bitfy/orb";
 import { Contact } from "@/components/bitfy/contact";
@@ -22,6 +23,7 @@ function Home() {
         <Hero />
         <About />
         <Services />
+        <Work />
         <Marquee />
         <Orb />
         <Contact />

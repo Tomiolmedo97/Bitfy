@@ -7,6 +7,7 @@ import { WHATSAPP_DISPLAY, whatsappUrl } from "@/lib/whatsapp";
 const LINKS = [
   { href: "#about", label: "Nosotros" },
   { href: "#services", label: "Servicios" },
+  { href: "#work", label: "Proyectos" },
   { href: "#contact", label: "Contacto" },
 ];
 
