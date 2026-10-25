@@ -34,6 +34,14 @@ const PROJECTS = [
     href: "https://inorum.vercel.app/",
     image: "/work/inorum.jpg",
   },
+  {
+    n: "05",
+    name: "Predio",
+    kind: "Plataforma",
+    copy: "Reservá salones, peloteros, canchas y quinchos en la Provincia de Buenos Aires. Filtrá, elegí el turno y publicá tu espacio.",
+    href: "https://predio-soft.vercel.app/",
+    image: "/work/predio.jpg",
+  },
 ];
 
 export function Work() {
@@ -46,7 +54,7 @@ export function Work() {
             Sitios en el aire. Negocios reales.
           </h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted">
-            Landings, catálogos e institucionales publicados. Cada uno, a la medida del rubro.
+            Landings, catálogos, plataformas e institucionales publicados. Cada uno, a la medida del rubro.
           </p>
         </Reveal>
 
